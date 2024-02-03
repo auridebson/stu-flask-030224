@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>Flask - Um mundo estranho</h1>
+    <!-- <h1>Flask - Um mundo estranho</h1>
 
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque mollitia 
@@ -22,7 +22,7 @@
     </p>
 
     <h3>Nome: {{nome}}</h3>
-    <h3>Idade: {{idade}}</h3>
+    <h3>Idade: {{idade}}</h3> -->
 
     {% if nome == 'auridebson' %}
         <p class="container-aviso">Bem vindo {{nome}}</p>
@@ -30,7 +30,9 @@
         <p class="container-aviso">Você não é o usuário esperado</p>
     {% endif %}
 
-    <h4>Nomes mais comuns na Itália</h4>
+    <hr>
+
+    <h1>Nomes mais comuns na Itália</h1>
     {% for nome in lista %}
     <h3>{{nome}}</h3>
     {% endfor %}
