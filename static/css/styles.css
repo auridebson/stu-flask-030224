@@ -35,5 +35,9 @@ p {
     background-color: #8080808a;
     width: 20%;
     border-radius: 6px;
-    
+}
+
+ol, ul {
+    margin: 20px;
+    padding: 20px;
 }

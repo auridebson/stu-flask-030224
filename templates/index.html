@@ -30,6 +30,12 @@
         <p class="container-aviso">Você não é o usuário esperado</p>
     {% endif %}
 
+    <ul>
+        {% for nome in lista %}
+        <li>{{nome}}</li>
+        {% endfor %}
+    </ul>
+    
 
 </body>
 </html>
