@@ -30,14 +30,10 @@
         <p class="container-aviso">Você não é o usuário esperado</p>
     {% endif %}
 
-    <p>
-        <h4>Nomes mais comuns na Itália</h4>
-        <ul>
-            {% for nome in lista %}
-            <li>{{nome}}</li>
-            {% endfor %}
-        </ul>
-    </p>
+    <h4>Nomes mais comuns na Itália</h4>
+    {% for nome in lista %}
+    <h3>{{nome}}</h3>
+    {% endfor %}
     
 
 </body>
