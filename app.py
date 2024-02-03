@@ -16,5 +16,23 @@ def index():
     idade = 39
     return render_template('index.html', nome=nome, idade=idade, lista=lista)
 
+
+@app.route("/cadastrar", methods=["POST"])
+def cadastrar():
+    nome = request.form.get('nome')
+    lista.append(nome)
+
+    return """
+    <script>
+        alert("Cadastro realizado com sucesso")
+        window.location.href = "/"
+    </script>
+    """
+
+@app.route("/visulizar")
+def visualizar():
+    render_template("visualizar.html", lista)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
