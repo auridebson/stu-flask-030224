@@ -13,8 +13,27 @@ h1 {
     border-radius: 6px;
 }
 
+h3 {
+    background-color: #b1ca1fb7;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 6px;
+
+}
+
 p {
     margin: 10px;
     padding: 10px;
     width: 50%;
+}
+
+.container-aviso {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    background-color: #8080808a;
+    width: 20%;
+    border-radius: 6px;
+    
 }

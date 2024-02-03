@@ -8,20 +8,28 @@
 </head>
 <body>
 
-    <h1>Flash - Um mundo estranho</h1>
+    <h1>Flask - Um mundo estranho</h1>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque mollitia 
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque mollitia 
         at officiis laudantium excepturi voluptate numquam modi minima libero laborum 
         quisquam distinctio est soluta, ducimus quo aliquam optio sed.
     </p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque mollitia 
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque mollitia 
         at officiis laudantium excepturi voluptate numquam modi minima libero laborum 
         quisquam distinctio est soluta, ducimus quo aliquam optio sed.
     </p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque mollitia 
-        at officiis laudantium excepturi voluptate numquam modi minima libero laborum 
-        quisquam distinctio est soluta, ducimus quo aliquam optio sed.
-    </p>
-    
+
+    <h3>Nome: {{nome}}</h3>
+    <h3>Idade: {{idade}}</h3>
+
+    {% if nome == 'auridebson' %}
+        <p class="container-aviso">Bem vindo {{nome}}</p>
+    {% else %}
+        <p class="container-aviso">Você não é o usuário esperado</p>
+    {% endif %}
+
+
 </body>
 </html>
